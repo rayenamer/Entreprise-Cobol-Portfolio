@@ -1,0 +1,14 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. MON-PROGRAMME.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01 WS-NOM        PIC X(20) VALUE 'CEO'.
+       01 WS-COMPTEUR   PIC 9(10) VALUE 1000000000.
+
+       PROCEDURE DIVISION.
+           MOVE 'Rayen' TO WS-NOM
+           ADD 1 TO WS-COMPTEUR
+           DISPLAY 'Bonjour ' WS-NOM
+           DISPLAY 'Your netWorth : ' WS-COMPTEUR
+           STOP RUN.
